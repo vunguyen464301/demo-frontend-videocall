@@ -30,7 +30,7 @@ const configs = addBaseConfig({
   },
   plugins: [
     new DefinePlugin({
-      SOCKET_HOST: JSON.stringify(`localhost:${socketConfig}`)
+      SOCKET_HOST: JSON.stringify(`localhost:${socketConfig.PORT}`)
     }),
     new HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
